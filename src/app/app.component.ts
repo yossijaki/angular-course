@@ -11,6 +11,15 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
 
   data = {
-    title: 'Angular core deep dive'
+    title: 'Angular Core Deep Dive'
   }
+
+  onLogoClicked() {
+    alert('Hello world');
+  }
+
+  onKeyUp(newTitle:string) {
+    this.data.title = newTitle;
+  }
+
 }
